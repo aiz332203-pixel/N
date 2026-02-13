@@ -1,7 +1,8 @@
 #异步数据库配置文件
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine,async_sessionmaker
 #数据库URL
-ASYNC_DATABASE_URL = "mysql+aiomysql://root:Zhang2003@localhost:3306/news_app?charset=utf8mb4"
+# ASYNC_DATABASE_URL = "mysql+aiomysql://root:Zhang2003@localhost:3306/news_app?charset=utf8mb4"
+ASYNC_DATABASE_URL="postgresql+asyncpg://postgres.etfcuuojykdtdynvyjwd:Zhang2003chon@aws-1-ap-northeast-1.pooler.supabase.com:5432/postgres"
 #创建异步引擎
 async_engine = create_async_engine(
     ASYNC_DATABASE_URL,
